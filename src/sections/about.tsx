@@ -82,7 +82,7 @@ export function AboutSection() {
             <div className="w-10 h-10 rounded-[--radius-lg] bg-[hsl(var(--color-accent-subtle))] flex items-center justify-center">
               <IconAward className="text-[hsl(var(--color-accent))]" size={20} />
             </div>
-            <h3 className="text-lg font-semibold">Key Achievements</h3>
+            <h3 className="text-lg font-semibold">Tech Bootcamp</h3>
           </div>
 
           <div className="space-y-4">

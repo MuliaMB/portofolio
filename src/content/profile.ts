@@ -125,7 +125,6 @@ export interface ProfileData {
   skillCategories: SkillCategory[];
   projects: Project[];
   certificates: Certificate[];
-  bugHunting: BugHuntingEntry[];
   workExperience: WorkExperience[];
 }
 
@@ -135,15 +134,14 @@ export interface ProfileData {
 
 export const profile: ProfileData = {
   personal: {
-    name: "Muhammad Reyhan",
-    title: "Cybersecurity Enthusiast",
+    name: "Mulia Abubakar",
+    title: "Web Developer",
     roles: [
-      "Backend Developer",
-      "Cloud & Infrastructure Management",
-      "Bug Bounty Hunter",
-      "Cybersecurity Enthusiast",
+      "Web Developer",
+      "Cloud Infrastructure",
+      "Freelancers",
     ],
-    location: "Pekanbaru, Riau",
+    location: "Indonesia, Palembang",
     bio: "Self-taught high school graduate building a career in technology. I develop skills in programming, cloud computing, and cybersecurity bug bounty. Ready to contribute to dynamic teams and real projects. My journey combines hands-on learning with practical application, focusing on web development, security research, and AI integration.",
     shortBio: "Self-taught developer building a career in tech. Bug bounty hunter by passion.",
     resumeUrl: "/resume",
@@ -151,17 +149,17 @@ export const profile: ProfileData = {
     socialLinks: [
       {
         platform: "github",
-        url: "https://github.com/Gioxaa",
+        url: "https://github.com/MuliaMB",
         label: "GitHub",
       },
       {
         platform: "email",
-        url: "freyrey222@gmail.com",
+        url: "muliayoga8@gmail.com",
         label: "Email",
       },
       {
         platform: "linkedin",
-        url: "https://www.linkedin.com/in/muhammad-reyhan-gx/",
+        url: "https://www.linkedin.com/in/yoga-mulia-abubakar/",
         label: "LinkedIn",
       },
     ],
@@ -175,67 +173,51 @@ export const profile: ProfileData = {
 
   education: [
     {
-      institution: "SMA Negeri 2 Rambah Hilir",
+      institution: "SMA Negeri 14 Palembang",
       degree: "High School Graduate",
-      field: "Science",
-      startYear: 2022,
-      endYear: 2025,
+      field: "Social",
+      startYear: 2019,
+      endYear: 2021,
       description: "Self-taught programming and cybersecurity alongside formal education.",
     },
     {
-      institution: "Universitas Riau",
-      degree: "Undergraduate Student Bachelor",
-      field: "Informatics",
-      startYear: 2025,
-      endYear: null,
+      institution: "Politeknik Negeri Sriwijaya",
+      degree: "Graduate Management Informatics",
+      field: "D4",
+      startYear: 2021,
+      endYear: 2025,
       description: "Currently pursuing a degree in Informatics, focusing on software engineering and artificial intelligence.",
     }
   ],
 
   organizations: [
     {
-      name: "OSIS SMA Negeri 2 Rambah Hilir",
-      role: "Secretary",
-      startDate: "2023-10",
-      endDate: "2024-11",
+      name: "Himpunan Mahasiswa Informatika Manajemen Informatika Politeknik Negeri Sriwijaya",
+      role: "Head Social",
+      startDate: "2022-02",
+      endDate: "2024-01",
       description: "Managing organizational documentation and coordinating student activities.",
     },
     {
-      name: "Computer Journalism Club",
-      role: "Head of Computer Journalism",
-      startDate: "2022-10",
-      endDate: "2024-11",
+      name: "Badan Eksekutif Mahasiswa Politeknik Negeri Sriwijaya",
+      role: "Head Of Student Welfare",
+      startDate: "2024-03",
+      endDate: "2025-02",
       description: "Leading the club in creating digital content and covering school events.",
-    },
-    {
-      name: "SMANung Intelligence Team",
-      role: "Member",
-      startDate: "2022-10",
-      endDate: "2023-11",
-      description: "Participating in academic competitions and knowledge-sharing activities.",
     },
   ],
 
   achievements: [
     {
-      title: "3rd Place in Journalism Competition",
-      description: "Rokan Hulu Regency Level",
-      year: 2023,
-    },
-    {
-      title: "3rd Place in Short Film Competition",
-      description: "Rokan Hulu Regency Level",
+      title: "Bangkit Academy - Cloud Computing",
+      description: "Learning cloud computing fundamentals, including cloud architecture, services, and deployment models and doing milestone projects.",
       year: 2024,
     },
+
     {
-      title: "3rd Place in OSN Informatics",
-      description: "Rokan Hulu Regency Level - National Science Olympiad",
-      year: 2024,
-    },
-    {
-      title: "Finalist in Indonesian Debate Competition",
-      description: "Riau Provincial Level",
-      year: 2024,
+      title: "Juara GCP - Season 12",
+      description: "Learning and mastering Google Cloud Platform Services as a student",
+      year: 2026,
     },
   ],
 
@@ -243,130 +225,81 @@ export const profile: ProfileData = {
     {
       name: "Programming",
       description: "Web development technologies and tools for building modern applications",
-      skills: [
+      skills: [ 
         { name: "HTML5", level: "Expert", yearsUsed: 3 },
         { name: "CSS3", level: "Expert", yearsUsed: 3 },
         { name: "JavaScript", level: "Proficient", yearsUsed: 2 },
-        { name: "React", level: "Proficient", yearsUsed: 2 },
         { name: "Node.js", level: "Proficient", yearsUsed: 2 },
+        { name: "React", level: "Proficient", yearsUsed: 2 },
+        { name: "Next", level: "Proficient", yearsUsed: 2 },
+        { name: "PHP", level: "Proficient", yearsUsed: 2 },
+        { name: "Laravel", level: "Proficient", yearsUsed: 2 },
         { name: "Python", level: "Proficient", yearsUsed: 2 },
         { name: "MySQL", level: "Familiar", yearsUsed: 1 },
         { name: "Git", level: "Proficient", yearsUsed: 2 },
+        { name: "Google Colab", level: "Proficient", yearsUsed: 2 },
       ],
     },
     {
-      name: "Cybersecurity",
-      description: "Web application security testing and vulnerability research",
-      skills: [
-        { name: "SQL Injection", level: "Proficient", yearsUsed: 2 },
-        { name: "XSS Attacks", level: "Proficient", yearsUsed: 2 },
-        { name: "IDOR", level: "Proficient", yearsUsed: 2 },
-        { name: "SSRF", level: "Familiar", yearsUsed: 1 },
-        { name: "CSRF Token Reuse", level: "Familiar", yearsUsed: 1 },
-        { name: "File Upload Bypass", level: "Familiar", yearsUsed: 1 },
-        { name: "Vulnerability Assessment", level: "Proficient", yearsUsed: 2 },
-        { name: "Security Headers", level: "Familiar", yearsUsed: 1 },
-      ],
-    },
-    {
-      name: "Microsoft Office & Editing",
-      description: "Document creation, data analysis, and creative editing",
+      name: "Microsoft Office & Editing tools",
+      description: "Document creation and data analysis",
       skills: [
         { name: "Microsoft Word", level: "Expert", yearsUsed: 4 },
         { name: "Microsoft Excel", level: "Proficient", yearsUsed: 3 },
         { name: "Microsoft PowerPoint", level: "Expert", yearsUsed: 4 },
-        { name: "Canva", level: "Proficient", yearsUsed: 2 },
-        { name: "Photoshop", level: "Familiar", yearsUsed: 1 },
         { name: "Figma", level: "Familiar", yearsUsed: 1 },
         { name: "Notion", level: "Familiar", yearsUsed: 2 },
+        { name: "Draw.io", level: "Familiar", yearsUsed: 2 },
       ],
     },
     {
       name: "Cloud & Infrastructure",
       description: "Cloud computing platforms and infrastructure management",
       skills: [
-        { name: "AWS", level: "Familiar", yearsUsed: 1 },
-        { name: "Google Cloud", level: "Familiar", yearsUsed: 1 },
-        { name: "Docker", level: "Familiar", yearsUsed: 1 },
-        { name: "Digital Ocean", level: "Proficient", yearsUsed: 2 },
-        { name: "Azure", level: "Familiar", yearsUsed: 1 },
-        { name: "Kubernetes", level: "Familiar", yearsUsed: 1 },
+        { name: "Google Cloud Platform", level: "Familiar", yearsUsed: 1 },
         { name: "Linux", level: "Proficient", yearsUsed: 2 },
-        { name: "Nginx", level: "Familiar", yearsUsed: 1 },
-        { name: "Apache", level: "Familiar", yearsUsed: 1 },
-        { name: "Cloudflare", level: "Familiar", yearsUsed: 1 },
         { name: "Vercel", level: "Familiar", yearsUsed: 1 },
-        { name: "Netlify", level: "Familiar", yearsUsed: 1 },
-        { name: "Firebase", level: "Familiar", yearsUsed: 1 },
       ],
     }
   ],
 
   projects: [
     {
-      slug: "raso-minang-website",
-      title: "Raso Minang Website",
+      slug: "BAPER-Bank-Perencanaan",
+      title: "BAPER - Bank Perencanaan",
       description: "Full-stack restaurant web application for Padang cuisine. Built with Next.js App Router, Radix UI, and Framer Motion. Features menu system, gallery, reservations, and WCAG 2.1 accessibility compliance.",
-      tags: ["Next.js", "TypeScript", "Radix UI", "Framer Motion"],
+      tags: ["Laravel", "Tailwind CSS", "My SQL", "REST API", "Role-Based Access Control"],
       featured: true,
-      year: 2026,
-      githubUrl: "https://github.com/Gioxaa/raso-minang-website",
+      year: 2025,
+      githubUrl: "https://pln-baper.my.id/",
     },
     {
-      slug: "discord-selfbot-scheduler",
-      title: "Discord SelfBot MessageScheduler",
+      slug: "Plus62-Internet-Service-Provider",
+      title: "Plus62 Internet Service Provider",
       description: "A self-bot for Discord that automatically sends scheduled messages to specified channels with random delays. Supports multi-account management and webhook logging.",
-      tags: ["TypeScript", "discord.js-selfbot-v13", "Automation"],
+      tags: ["Next JS", "Tailwind CSS", "Vercel"],
       featured: true,
-      year: 2026,
-      githubUrl: "https://github.com/Gioxaa/Discord-SelfBot-MessageScheduler",
+      year: 2025,
+      githubUrl: "https://plus62.net/",
     },
     {
-      slug: "warranty-stock-bot",
-      title: "Warranty & Stock Bot Discord",
+      slug: "Learning-Ways-Digital",
+      title: "Learning Ways Digital",
       description: "Discord bot for customer support tasks including warranty claims, stock management, and providing information about payment methods and premium app terms.",
-      tags: ["Python", "discord.py", "Bot"],
+      tags: ["Next JS", "Tailwind CSS", "Vercel"],
       featured: true,
-      year: 2024,
-      githubUrl: "https://github.com/Gioxaa/WarrantyAndStockBot-Discord",
+      year: 2025,
+      githubUrl: "https://lways-digital.vercel.app/",
     },
     {
-      slug: "portfolio-v2",
-      title: "Portfolio Website",
+      slug: "sikawan-kons",
+      title: "Sikawan Kons",
       description: "Portfolio v2 built with Next.js App Router, Radix UI, and Framer Motion. Features dark/light theme, accessibility compliance, and WCAG 2.1 accessibility compliance.",
-      tags: ["Next.js", "TypeScript", "Radix UI", "Framer Motion", "Tailwind CSS"],
+      tags: ["PHP", "Laravel", "MySQL", "Laravel Cloud"],
       featured: true,
       year: 2026,
-      githubUrl: "https://github.com/Gioxaa/portfolio-v2.git",
+      githubUrl: "sikawan-kons.laravel.cloud",
     },
-    {
-      slug: "growtopia-checker",
-      title: "Growtopia Online Checker",
-      description: "Python script to monitor online players in Growtopia and send notifications to Discord via webhook. Useful for server uptime monitoring.",
-      tags: ["Python", "Webhooks", "Automation"],
-      featured: false,
-      year: 2025,
-      githubUrl: "https://github.com/Gioxaa/growtopia-online-checker-webhook",
-    },
-    {
-      slug: "discordbot-community-v2",
-      title: "Discord Community Bot v2",
-      description: "A modular Discord bot for community servers, featuring command handling, event management, and utility functions. Built for easy customization.",
-      tags: ["JavaScript", "discord.js", "Bot"],
-      featured: false,
-      year: 2025,
-      githubUrl: "https://github.com/Gioxaa/discordbot-community-v2",
-    },
-    {
-      slug: "keygen-roblox",
-      title: "Roblox Keygen",
-      description: "Key generation system for Roblox applications with TypeScript backend.",
-      tags: ["TypeScript", "Roblox", "API"],
-      featured: false,
-      year: 2025,
-      githubUrl: "https://github.com/Gioxaa/keygen_roblox",
-    },
-
   ],
 
   certificates: [
@@ -415,15 +348,15 @@ export const profile: ProfileData = {
   ],
 
   bugHunting: [
-    {
-      id: "bug-bounty-2025",
-      title: "DPRD Prov Riau",
-      platform: "DPRD Prov Riau",
-      severity: "medium",
-      date: "2025-05",
-      description: "XML-RPC Vulnerability, user enumeration, and other security vulnerabilities. Access to wp-cron.php, server banner, and other information.",
-      tags: ["bug bounty", "security", "vulnerability research"],
-    },
+    // {
+    //   id: "bug-bounty-2025",
+    //   title: "DPRD Prov Riau",
+    //   platform: "DPRD Prov Riau",
+    //   severity: "medium",
+    //   date: "2025-05",
+    //   description: "XML-RPC Vulnerability, user enumeration, and other security vulnerabilities. Access to wp-cron.php, server banner, and other information.",
+    //   tags: ["bug bounty", "security", "vulnerability research"],
+    // },
   ],
 
   workExperience: [],

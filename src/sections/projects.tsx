@@ -85,7 +85,7 @@ export function ProjectsSection() {
                           className="text-[hsl(var(--color-text-muted))] hover:text-[hsl(var(--color-text))]"
                         >
                           <IconGitHub size={18} />
-                          <span className="text-sm ml-1">Code</span>
+                          <span className="text-sm ml-1">Visit Website</span>
                         </ExternalLink>
                       )}
                       {project.liveUrl && (

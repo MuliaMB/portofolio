@@ -5,31 +5,22 @@ import { NoiseOverlay } from "@/components/ui/noise-overlay";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Muhammad Reyhan | Self-taught Developer & Security Enthusiast",
+  title: "Wormyy",
   description:
-    "Self-taught developer passionate about programming, cybersecurity, and prompt engineering. Building tools and exploring the intersection of AI and security.",
+    "I am a passionate learner in web development and cloud computing, focused on building modern web applications and understanding scalable cloud infrastructure.",
   keywords: [
-    "self-taught developer",
-    "security enthusiast",
-    "prompt engineering",
-    "cybersecurity",
+    "Web developer",
     "portfolio",
     "indonesia",
   ],
-  authors: [{ name: "Muhammad Reyhan" }],
+  authors: [{ name: "Yoga Mulia" }],
   openGraph: {
     type: "website",
     locale: "id_ID",
-    title: "Muhammad Reyhan | Self-taught Developer & Security Enthusiast",
+    title: "Wormyy",
     description:
-      "Self-taught developer passionate about programming, cybersecurity, and prompt engineering.",
-    siteName: "Muhammad Reyhan Portfolio",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Muhammad Reyhan | Self-taught Developer & Security Enthusiast",
-    description:
-      "Self-taught developer passionate about programming, cybersecurity, and prompt engineering.",
+      "a passionate learner in web development and cloud computing",
+    siteName: "Wormy Portfolio",
   },
   robots: {
     index: true,
