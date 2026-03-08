@@ -1,5 +1,3 @@
-Portfolio
-
 <div align="center">
 
 Personal portfolio website showcasing my projects, skills, and journey as a self-taught developer and cybersecurity enthusiast.
@@ -56,25 +54,6 @@ portfolio-v2/
 │   └── sections/        # Page sections
 ├── tests/               # E2E tests
 └── README.md
-```
-
----
-
-## Quick Start
-
-```bash
-# Clone the repo
-git clone https://github.com/Gioxaa/portfolio-v2.git
-cd portfolio-v2
-
-# Install dependencies
-pnpm install
-
-# Start development server
-pnpm dev
-
-# Build for production
-pnpm build
 ```
 
 ---
