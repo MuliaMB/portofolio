@@ -1,7 +1,5 @@
 <div align="center">
 
-Personal portfolio website showcasing my projects, skills, and journey as a self-taught developer and cybersecurity enthusiast.
-
 [![Live Demo](https://img.shields.io/badge/▶_Live_Demo-Visit_Site-2ea44f?style=for-the-badge)](https://portfolio-v2-mauve-kappa.vercel.app/)
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js&logoColor=white)](https://nextjs.org/)
@@ -95,11 +93,3 @@ Build and deploy the `.next` folder to Netlify, Cloudflare Pages, or any static 
 ## License
 
 MIT License — feel free to use this as a template for your own portfolio.
-
----
-
-<div align="center">
-
-**[Muhammad Reyhan](https://github.com/Gioxaa)** · [Portfolio](https://portfolio-v2-mauve-kappa.vercel.app/) · [Email](mailto:freyrey222@gmail.com) · [LinkedIn](https://www.linkedin.com/in/muhammad-reyhan-gx/)
-
-</div>
