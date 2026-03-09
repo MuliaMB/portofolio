@@ -110,7 +110,7 @@ export function Navbar() {
                       "relative px-3 py-2 text-sm font-medium",
                       "transition-colors duration-[--duration-fast]",
                       activeSection === item.id
-                        ? "text-[hsl(var(--color-text))]"
+                        ? "text-[hsl(var(--color-foreground))]"
                         : "text-[hsl(var(--color-text-muted))] hover:text-[hsl(var(--color-text-secondary))]"
                     )}
                   >
@@ -192,7 +192,7 @@ export function Navbar() {
                       "transition-colors duration-[--duration-fast]",
                       activeSection === item.id
                         ? "text-[hsl(var(--color-accent))]"
-                        : "text-[hsl(var(--color-text-secondary))] hover:text-[hsl(var(--color-text))]"
+                        : "text-[hsl(var(--color-foreground-secondary))] hover:text-foreground)]"
                     )}
                   >
                     {item.label}
