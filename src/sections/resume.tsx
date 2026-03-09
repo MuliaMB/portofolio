@@ -64,13 +64,13 @@ export function ResumeSection() {
                       <div>
                         <h4 className="font-semibold">{work.role}</h4>
                         <p className="text-[hsl(var(--color-accent))]">{work.company}</p>
-                        <p className="text-sm text-[hsl(var(--color-text-muted))]">
+                        <p className="text-sm text-foreground-muted">
                           {work.startDate} - {work.endDate || "Present"}
                         </p>
                       </div>
                     </div>
 
-                    <p className="text-sm text-[hsl(var(--color-text-secondary))] mb-4">
+                    <p className="text-sm text-foreground-secondary mb-4">
                       {work.description}
                     </p>
 
@@ -78,7 +78,7 @@ export function ResumeSection() {
                       {work.achievements.map((achievement, i) => (
                         <li
                           key={i}
-                          className="text-sm text-[hsl(var(--color-text-secondary))] flex items-start gap-2"
+                          className="text-sm text-foreground-secondary flex items-start gap-2"
                         >
                           <span className="text-[hsl(var(--color-accent))] mt-1.5">•</span>
                           {achievement}

@@ -9,9 +9,6 @@ import {
   AboutSection,
   SkillsSection,
   ProjectsSection,
-  CertificatesSection,
-  BugHuntingSection,
-  ResumeSection,
 } from "@/sections";
 
 export default function HomePage() {
@@ -21,9 +18,6 @@ export default function HomePage() {
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
-      <CertificatesSection />
-      <BugHuntingSection />
-      <ResumeSection />
     </>
   );
 }

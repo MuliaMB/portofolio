@@ -77,7 +77,7 @@ export function Navbar() {
 
       <header
         className={cn(
-          "fixed top-0 left-0 right-0 z-[var(--z-sticky)]",
+          "fixed top-0 left-0 right-0 z-(--z-sticky)",
           "transition-all duration-[--duration-normal]",
           isScrolled
             ? "bg-[hsl(var(--color-bg)/0.8)] backdrop-blur-md border-b border-[hsl(var(--color-border))]"
@@ -110,8 +110,8 @@ export function Navbar() {
                       "relative px-3 py-2 text-sm font-medium",
                       "transition-colors duration-[--duration-fast]",
                       activeSection === item.id
-                        ? "text-[hsl(var(--color-text))]"
-                        : "text-[hsl(var(--color-text-muted))] hover:text-[hsl(var(--color-text-secondary))]"
+                        ? "text-[hsl(var(--color-foreground))]"
+                        : "text-foreground-muted hover:text-foreground-secondary"
                     )}
                   >
                     {item.label}
@@ -192,7 +192,7 @@ export function Navbar() {
                       "transition-colors duration-[--duration-fast]",
                       activeSection === item.id
                         ? "text-[hsl(var(--color-accent))]"
-                        : "text-[hsl(var(--color-text-secondary))] hover:text-[hsl(var(--color-text))]"
+                        : "text-[hsl(var(--color-foreground-secondary))] hover:text-foreground)]"
                     )}
                   >
                     {item.label}

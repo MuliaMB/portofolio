@@ -48,20 +48,20 @@ export function ProjectsSection() {
                 variant={isFeatured ? "glass" : "default"}
                 className="h-full flex flex-col"
               >
-                <CardContent className={cn("flex-grow", isFeatured ? "p-6" : "p-4")}>
+                <CardContent className={cn("grow", isFeatured ? "p-6" : "p-4")}>
                   <div className="flex items-start justify-between gap-4 mb-4">
                     <h4 className={cn("font-semibold", isFeatured ? "text-xl" : "text-lg")}>
                       {project.title}
                     </h4>
                     {isFeatured && (
-                      <span className="text-sm text-[hsl(var(--color-text-muted))] shrink-0">
+                      <span className="text-sm text-foreground-muted shrink-0">
                         {project.year}
                       </span>
                     )}
                   </div>
 
                   <p className={cn(
-                    "text-[hsl(var(--color-text-secondary))] mb-4",
+                    "text-foreground-secondary mb-4",
                     isFeatured ? "leading-relaxed" : "text-sm line-clamp-3"
                   )}>
                     {project.description}
@@ -82,7 +82,7 @@ export function ProjectsSection() {
                       {project.githubUrl && (
                         <ExternalLink
                           href={project.githubUrl}
-                          className="text-[hsl(var(--color-text-muted))] hover:text-[hsl(var(--color-text))]"
+                          className="text-foreground-muted hover:text-foreground"
                         >
                           <IconGitHub size={18} />
                           <span className="text-sm ml-1">Visit Website</span>
@@ -91,7 +91,7 @@ export function ProjectsSection() {
                       {project.liveUrl && (
                         <ExternalLink
                           href={project.liveUrl}
-                          className="text-[hsl(var(--color-text-muted))] hover:text-[hsl(var(--color-text))]"
+                          className="text-foreground-muted hover:text-foreground"
                         >
                           <IconExternalLink size={18} />
                           <span className="text-sm ml-1">Live</span>

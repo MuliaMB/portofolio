@@ -67,7 +67,7 @@ export function HeroSection() {
           {/* Content */}
           <div className="space-y-8">
             {/* Location badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[hsl(var(--color-surface))] border border-[hsl(var(--color-border))] text-sm text-[hsl(var(--color-text-secondary))]">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[hsl(var(--color-surface))] border border-[hsl(var(--color-border))] text-sm text-foreground-secondary">
               <IconMapPin size={14} className="text-[hsl(var(--color-accent))]" />
               {profile.personal.location}
             </div>
@@ -75,7 +75,7 @@ export function HeroSection() {
             {/* Name */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
               <span className="block">{profile.personal.name.split(" ")[0]}</span>
-              <span className="block text-[hsl(var(--color-text-secondary))]">
+              <span className="block text-foreground-secondary">
                 {profile.personal.name.split(" ").slice(1).join(" ")}
               </span>
             </h1>
@@ -97,7 +97,7 @@ export function HeroSection() {
             </div>
 
             {/* Bio */}
-            <p className="text-lg text-[hsl(var(--color-text-secondary))] max-w-lg leading-relaxed">
+            <p className="text-lg text-foreground-secondary max-w-lg leading-relaxed">
               {profile.personal.shortBio}
             </p>
 
@@ -108,7 +108,13 @@ export function HeroSection() {
                 <IconArrowRight size={18} />
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href={profile.personal.resumeUrl}>Download Resume</a>
+                <a 
+                  href="https://drive.google.com/file/d/17VaATv4Q6XIRCJAA1ZiAvcN0EpTHRbrl/view?usp=sharing" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Download Resume
+                </a>
               </Button>
             </div>
 
@@ -121,7 +127,7 @@ export function HeroSection() {
                       key={link.platform}
                       href={link.url}
                       aria-label={link.label}
-                      className="text-[hsl(var(--color-text-muted))] hover:text-[hsl(var(--color-text))]"
+                      className="text-foreground-muted hover:text-foreground"
                     >
                       <IconGitHub size={24} />
                     </ExternalLink>
@@ -133,7 +139,7 @@ export function HeroSection() {
                       key={link.platform}
                       href={link.url}
                       aria-label={link.label}
-                      className="text-[hsl(var(--color-text-muted))] hover:text-[hsl(var(--color-text))]"
+                      className="text-foreground-muted hover:text-foreground"
                     >
                       <IconLinkedIn size={24} />
                     </ExternalLink>
@@ -156,7 +162,7 @@ export function HeroSection() {
                     {stat.value}
                     {stat.suffix}
                   </div>
-                  <div className="mt-2 text-xs md:text-sm text-[hsl(var(--color-text-muted))] whitespace-nowrap">
+                  <div className="mt-2 text-xs md:text-sm text-foreground-muted whitespace-nowrap">
                     {stat.label}
                   </div>
                 </div>

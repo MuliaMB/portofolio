@@ -188,7 +188,7 @@ export default function ResumePage() {
         </section>
 
         {/* Bug Hunting / Security Research */}
-        {profile.bugHunting.length > 0 && (
+        {/* {profile.bugHunting.length > 0 && (
           <section className="mb-6">
             <h2 className="text-lg font-semibold text-gray-900 mb-3 uppercase tracking-wide border-b border-gray-200 pb-1 print:text-black print:border-gray-400">
               Security Research
@@ -205,7 +205,7 @@ export default function ResumePage() {
               ))}
             </div>
           </section>
-        )}
+        )} */}
 
         {/* Print Button - Hidden in Print */}
         <div className="mt-8 text-center print:hidden">

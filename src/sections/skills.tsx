@@ -31,7 +31,7 @@ export function SkillsSection() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold tracking-tight mb-3">{category.name}</h3>
                 
-                <p className="text-sm text-[hsl(var(--color-text-secondary))] mb-5 leading-relaxed">
+                <p className="text-sm text-foreground-secondary mb-5 leading-relaxed">
                   {category.description}
                 </p>
 
