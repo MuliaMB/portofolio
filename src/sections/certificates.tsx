@@ -77,7 +77,7 @@ export function CertificatesSection() {
               initial={reducedMotion ? { opacity: 1 } : { opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={reducedMotion ? { opacity: 0 } : { opacity: 0 }}
-              className="fixed inset-0 z-[var(--z-overlay)] bg-[hsl(0_0%_0%/0.8)]"
+              className="fixed inset-0 z-(--z-overlay) bg-[hsl(0_0%_0%/0.8)]"
               onClick={() => setSelectedCert(null)}
             />
 

@@ -142,8 +142,8 @@ export const profile: ProfileData = {
       "Freelancers",
     ],
     location: "Indonesia, Palembang",
-    bio: "Self-taught high school graduate building a career in technology. I develop skills in programming, cloud computing, and cybersecurity bug bounty. Ready to contribute to dynamic teams and real projects. My journey combines hands-on learning with practical application, focusing on web development, security research, and AI integration.",
-    shortBio: "Self-taught developer building a career in tech. Bug bounty hunter by passion.",
+    bio: "I am a passionate learner in web development and cloud computing, focused on building modern web applications and understanding scalable cloud infrastructure.",
+    shortBio: "A learner in web development and cloud computing, focused on building scalable modern apps.",
     resumeUrl: "/resume",
     startYear: 2022,
     socialLinks: [
@@ -166,9 +166,9 @@ export const profile: ProfileData = {
   },
 
   stats: [
-    { value: 10, label: "Projects Shipped", suffix: "+" },
-    { value: 3, label: "Years Experience", suffix: "+" },
-    { value: 5, label: "Certifications", suffix: "+" },
+    { value: 6, label: "Projects", suffix: "+" },
+    { value: 2, label: "Experience", suffix: "+" },
+    { value: 2, label: "Tech Bootcamp", suffix: "+" },
   ],
 
   education: [
@@ -178,7 +178,6 @@ export const profile: ProfileData = {
       field: "Social",
       startYear: 2019,
       endYear: 2021,
-      description: "Self-taught programming and cybersecurity alongside formal education.",
     },
     {
       institution: "Politeknik Negeri Sriwijaya",
@@ -186,7 +185,6 @@ export const profile: ProfileData = {
       field: "D4",
       startYear: 2021,
       endYear: 2025,
-      description: "Currently pursuing a degree in Informatics, focusing on software engineering and artificial intelligence.",
     }
   ],
 
@@ -196,27 +194,27 @@ export const profile: ProfileData = {
       role: "Head Social",
       startDate: "2022-02",
       endDate: "2024-01",
-      description: "Managing organizational documentation and coordinating student activities.",
+      description: "Leading social initiatives and strategic partnerships to raise donations for scholarships and disaster victims, both on and off-campus.",
     },
     {
       name: "Badan Eksekutif Mahasiswa Politeknik Negeri Sriwijaya",
       role: "Head Of Student Welfare",
       startDate: "2024-03",
       endDate: "2025-02",
-      description: "Leading the club in creating digital content and covering school events.",
+      description: "Leading the Student Welfare department to advocate for student aspirations, diversity, and mental well-being, while managing scholarship programs and ensuring a safe environment against misconduct.",
     },
   ],
 
   achievements: [
     {
       title: "Bangkit Academy - Cloud Computing",
-      description: "Learning cloud computing fundamentals, including cloud architecture, services, and deployment models and doing milestone projects.",
+      description: "Intensive cloud computing program by Google, focusing on GCP learn professional soft skills through a collaborative Capstone Project.",
       year: 2024,
     },
 
     {
       title: "Juara GCP - Season 12",
-      description: "Learning and mastering Google Cloud Platform Services as a student",
+      description: "Completed hands-on cloud labs and earned multiple GCP Skill Badges through Google Cloud Skills Boost, focusing on infrastructure, security, and data solutions.",
       year: 2026,
     },
   ],
@@ -267,7 +265,7 @@ export const profile: ProfileData = {
     {
       slug: "BAPER-Bank-Perencanaan",
       title: "BAPER - Bank Perencanaan",
-      description: "Full-stack restaurant web application for Padang cuisine. Built with Next.js App Router, Radix UI, and Framer Motion. Features menu system, gallery, reservations, and WCAG 2.1 accessibility compliance.",
+      description: "project management platform for PLN UP3 Indralaya that integrates planning requests with financial tracking. It allows users to submit proposals, manage budgets, and process documents in stages, all while being monitored in real-time by supervisors.",
       tags: ["Laravel", "Tailwind CSS", "My SQL", "REST API", "Role-Based Access Control"],
       featured: true,
       year: 2025,
@@ -276,7 +274,7 @@ export const profile: ProfileData = {
     {
       slug: "Plus62-Internet-Service-Provider",
       title: "Plus62 Internet Service Provider",
-      description: "A self-bot for Discord that automatically sends scheduled messages to specified channels with random delays. Supports multi-account management and webhook logging.",
+      description: "ESP +62 is a high-speed Internet Service Provider (ISP) dedicated to delivering reliable connectivity and seamless digital solutions for both residential and corporate needs.",
       tags: ["Next JS", "Tailwind CSS", "Vercel"],
       featured: true,
       year: 2025,
@@ -285,7 +283,7 @@ export const profile: ProfileData = {
     {
       slug: "Learning-Ways-Digital",
       title: "Learning Ways Digital",
-      description: "Discord bot for customer support tasks including warranty claims, stock management, and providing information about payment methods and premium app terms.",
+      description: "Learning Ways is a tech startup and software house providing end-to-end digital solutions. We specialize in developing scalable web and mobile applications, creating impactful graphic designs, and building custom machine learning models to solve complex problems through intelligent automation.",
       tags: ["Next JS", "Tailwind CSS", "Vercel"],
       featured: true,
       year: 2025,
@@ -294,60 +292,68 @@ export const profile: ProfileData = {
     {
       slug: "sikawan-kons",
       title: "Sikawan Kons",
-      description: "Portfolio v2 built with Next.js App Router, Radix UI, and Framer Motion. Features dark/light theme, accessibility compliance, and WCAG 2.1 accessibility compliance.",
+      description: "SIKAWAN KONS is a financial tracking application for PLN designed to automate corporate expenditure records, ensuring transparency and accuracy in managing company funds.",
       tags: ["PHP", "Laravel", "MySQL", "Laravel Cloud"],
       featured: true,
       year: 2026,
       githubUrl: "sikawan-kons.laravel.cloud",
     },
-  ],
-
-  certificates: [
     {
-      id: "journalism-2023",
-      title: "3rd Place in Journalism Competition",
-      issuer: "PUSPRESNAS",
-      date: "2023-05",
-      description: "3rd place in the Journalism Competition at Rokan Hulu Regency level.",
-    },
-    {
-      id: "shortfilm-2024",
-      title: "3rd Place in Short Film Competition",
-      issuer: "PUSPRESNAS",
-      date: "2024-05",
-      description: "3rd place in the Short Film Competition at Rokan Hulu Regency level.",
-    },
-    {
-      id: "osn-informatics-2024",
-      title: "3rd Place in OSN Informatics",
-      issuer: "PUSPRESNAS",
-      date: "2024-05",
-      description: "3rd place in the National Science Olympiad (Informatics) at Rokan Hulu Regency level.",
-    },
-    {
-      id: "debate-2024",
-      title: "Finalist in Indonesian Debate Competition",
-      issuer: "PUSPRESNAS",
-      date: "2024-09",
-      description: "Finalist in the Indonesian Debate Competition at Riau Provincial level.",
-    },
-    {
-      id: "siber-corner-2023",
-      title: "Zero to Hero Security Engineer",
-      issuer: "Siber Corner",
-      date: "2023-10",
-      description: "Comprehensive training on the basics of cyber security and Security Engineering techniques.",
-    },
-    {
-      id: "big-geospatial-2023",
-      title: "Geospatial Competition",
-      issuer: "Badan Informasi Geospasial (BIG)",
-      date: "2023-10",
-      description: "National Geospatial Competition for high school students. Participated in mapping exercises, GIS, and spatial data analysis.",
+      slug: "pln-prediction",
+      title: "PLN Prediction",
+      description: "PLN Prediction is a peak load forecasting system for power substations. It processes electrical data—including Voltage, Amperage, and Power—using a trained Artificial Neural Network (ANN) model. Developed as my final college thesis for graduation, this project utilizes real-world datasets sourced directly from PLN.",
+      tags: ["PHP", "Laravel", "Artificial Neural Network", "Google Colab", "Python", "TensorFlow", "MySQL"],
+      featured: true,
+      year: 2026,
+      githubUrl: "https://github.com/MuliaMB/pln.git",
     },
   ],
 
-  bugHunting: [
+  // certificates: [
+  //   {
+  //     id: "journalism-2023",
+  //     title: "3rd Place in Journalism Competition",
+  //     issuer: "PUSPRESNAS",
+  //     date: "2023-05",
+  //     description: "3rd place in the Journalism Competition at Rokan Hulu Regency level.",
+  //   },
+  //   {
+  //     id: "shortfilm-2024",
+  //     title: "3rd Place in Short Film Competition",
+  //     issuer: "PUSPRESNAS",
+  //     date: "2024-05",
+  //     description: "3rd place in the Short Film Competition at Rokan Hulu Regency level.",
+  //   },
+  //   {
+  //     id: "osn-informatics-2024",
+  //     title: "3rd Place in OSN Informatics",
+  //     issuer: "PUSPRESNAS",
+  //     date: "2024-05",
+  //     description: "3rd place in the National Science Olympiad (Informatics) at Rokan Hulu Regency level.",
+  //   },
+  //   {
+  //     id: "debate-2024",
+  //     title: "Finalist in Indonesian Debate Competition",
+  //     issuer: "PUSPRESNAS",
+  //     date: "2024-09",
+  //     description: "Finalist in the Indonesian Debate Competition at Riau Provincial level.",
+  //   },
+  //   {
+  //     id: "siber-corner-2023",
+  //     title: "Zero to Hero Security Engineer",
+  //     issuer: "Siber Corner",
+  //     date: "2023-10",
+  //     description: "Comprehensive training on the basics of cyber security and Security Engineering techniques.",
+  //   },
+  //   {
+  //     id: "big-geospatial-2023",
+  //     title: "Geospatial Competition",
+  //     issuer: "Badan Informasi Geospasial (BIG)",
+  //     date: "2023-10",
+  //     description: "National Geospatial Competition for high school students. Participated in mapping exercises, GIS, and spatial data analysis.",
+  //   },
+  // ],
+
     // {
     //   id: "bug-bounty-2025",
     //   title: "DPRD Prov Riau",
@@ -357,7 +363,6 @@ export const profile: ProfileData = {
     //   description: "XML-RPC Vulnerability, user enumeration, and other security vulnerabilities. Access to wp-cron.php, server banner, and other information.",
     //   tags: ["bug bounty", "security", "vulnerability research"],
     // },
-  ],
 
   workExperience: [],
 };
@@ -388,9 +393,6 @@ export const sectionIds = [
   "about",
   "skills",
   "projects",
-  "certificates",
-  "security",
-  "resume",
 ] as const;
 
 export type SectionId = typeof sectionIds[number];
@@ -403,7 +405,4 @@ export const navItems: { id: SectionId; label: string }[] = [
   { id: "about", label: "About Me" },
   { id: "skills", label: "Skills" },
   { id: "projects", label: "Works & Projects" },
-  { id: "certificates", label: "Certificates" },
-  { id: "security", label: "Bug Hunting" },
-  { id: "resume", label: "Resume" },
 ];

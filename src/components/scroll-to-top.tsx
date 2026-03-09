@@ -32,7 +32,7 @@ export function ScrollToTop() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
-          className="fixed bottom-6 right-6 z-[var(--z-sticky)]"
+          className="fixed bottom-6 right-6 z-(--z-sticky)"
         >
           <Button
             variant="secondary"
