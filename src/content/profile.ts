@@ -1,7 +1,6 @@
 /**
  * Profile Content
- * 
- * All portfolio content is defined here with full TypeScript types.
+ * * All portfolio content is defined here with full TypeScript types.
  * Edit this file to customize the portfolio.
  */
 
@@ -126,6 +125,8 @@ export interface ProfileData {
   projects: Project[];
   certificates: Certificate[];
   workExperience: WorkExperience[];
+  // PERBAIKAN: Tambahkan tipe bugHunting di sini
+  bugHunting: BugHuntingEntry[];
 }
 
 // =============================================================================
@@ -154,7 +155,7 @@ export const profile: ProfileData = {
       },
       {
         platform: "email",
-        url: "muliayoga8@gmail.com",
+        url: "mailto:muliayoga8@gmail.com",
         label: "Email",
       },
       {
@@ -167,7 +168,7 @@ export const profile: ProfileData = {
 
   stats: [
     { value: 6, label: "Projects", suffix: "+" },
-    { value: 2, label: "Experience", suffix: "+" },
+    { value: 2, label: "Years in Tech", suffix: "+" },
     { value: 2, label: "Tech Bootcamp", suffix: "+" },
   ],
 
@@ -211,7 +212,6 @@ export const profile: ProfileData = {
       description: "Intensive cloud computing program by Google, focusing on GCP learn professional soft skills through a collaborative Capstone Project.",
       year: 2024,
     },
-
     {
       title: "Juara GCP - Season 12",
       description: "Completed hands-on cloud labs and earned multiple GCP Skill Badges through Google Cloud Skills Boost, focusing on infrastructure, security, and data solutions.",
@@ -309,62 +309,13 @@ export const profile: ProfileData = {
     },
   ],
 
-  // certificates: [
-  //   {
-  //     id: "journalism-2023",
-  //     title: "3rd Place in Journalism Competition",
-  //     issuer: "PUSPRESNAS",
-  //     date: "2023-05",
-  //     description: "3rd place in the Journalism Competition at Rokan Hulu Regency level.",
-  //   },
-  //   {
-  //     id: "shortfilm-2024",
-  //     title: "3rd Place in Short Film Competition",
-  //     issuer: "PUSPRESNAS",
-  //     date: "2024-05",
-  //     description: "3rd place in the Short Film Competition at Rokan Hulu Regency level.",
-  //   },
-  //   {
-  //     id: "osn-informatics-2024",
-  //     title: "3rd Place in OSN Informatics",
-  //     issuer: "PUSPRESNAS",
-  //     date: "2024-05",
-  //     description: "3rd place in the National Science Olympiad (Informatics) at Rokan Hulu Regency level.",
-  //   },
-  //   {
-  //     id: "debate-2024",
-  //     title: "Finalist in Indonesian Debate Competition",
-  //     issuer: "PUSPRESNAS",
-  //     date: "2024-09",
-  //     description: "Finalist in the Indonesian Debate Competition at Riau Provincial level.",
-  //   },
-  //   {
-  //     id: "siber-corner-2023",
-  //     title: "Zero to Hero Security Engineer",
-  //     issuer: "Siber Corner",
-  //     date: "2023-10",
-  //     description: "Comprehensive training on the basics of cyber security and Security Engineering techniques.",
-  //   },
-  //   {
-  //     id: "big-geospatial-2023",
-  //     title: "Geospatial Competition",
-  //     issuer: "Badan Informasi Geospasial (BIG)",
-  //     date: "2023-10",
-  //     description: "National Geospatial Competition for high school students. Participated in mapping exercises, GIS, and spatial data analysis.",
-  //   },
-  // ],
-
-    // {
-    //   id: "bug-bounty-2025",
-    //   title: "DPRD Prov Riau",
-    //   platform: "DPRD Prov Riau",
-    //   severity: "medium",
-    //   date: "2025-05",
-    //   description: "XML-RPC Vulnerability, user enumeration, and other security vulnerabilities. Access to wp-cron.php, server banner, and other information.",
-    //   tags: ["bug bounty", "security", "vulnerability research"],
-    // },
+  // certificates: [],
 
   workExperience: [],
+  
+  // PERBAIKAN: Isi dengan array kosong (atau data bug bounty kamu yang di-comment)
+  certificates: [],
+  bugHunting: [], 
 };
 
 // =============================================================================
