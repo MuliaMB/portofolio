@@ -109,11 +109,11 @@ export function HeroSection() {
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <a 
-                  href="https://drive.google.com/file/d/17VaATv4Q6XIRCJAA1ZiAvcN0EpTHRbrl/view?usp=sharing" 
+                  href="https://drive.google.com/file/d/1-OPgJzPyRqBj7q3oKW4UwgRNwGa0QJdh/view?usp=sharing" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  Download Resume
+                  View Resume
                 </a>
               </Button>
             </div>
