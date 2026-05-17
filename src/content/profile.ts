@@ -235,7 +235,6 @@ export const profile: ProfileData = {
         { name: "Python", level: "Proficient", yearsUsed: 2 },
         { name: "MySQL", level: "Familiar", yearsUsed: 1 },
         { name: "Git", level: "Proficient", yearsUsed: 2 },
-        { name: "Google Colab", level: "Proficient", yearsUsed: 2 },
       ],
     },
     {
@@ -255,8 +254,11 @@ export const profile: ProfileData = {
       description: "Cloud computing platforms and infrastructure management",
       skills: [
         { name: "Google Cloud Platform", level: "Familiar", yearsUsed: 1 },
+        { name: "Amazon Web Services", level: "Familiar", yearsUsed: 1 },
+        { name: "Teraform", level: "Familiar", yearsUsed: 1 },
         { name: "Linux", level: "Proficient", yearsUsed: 2 },
         { name: "Vercel", level: "Familiar", yearsUsed: 1 },
+        { name: "Railway", level: "Familiar", yearsUsed: 1 },
       ],
     }
   ],
