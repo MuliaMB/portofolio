@@ -17,52 +17,64 @@ import { useState, useEffect, useRef } from "react";
  */
 export function useActiveSection(sectionIds: string[]): string {
   const [activeSection, setActiveSection] = useState<string>(sectionIds[0] || "");
-  const observer = useRef<IntersectionObserver | null>(null);
   
+  // Track visibility of all sections
+  const visibleSections = useRef<Record<string, number>>({});
+  
+  // Create stringified version of sectionIds to use as dependency
+  // to avoid re-running effect when the array reference changes
+  const sectionIdsStr = sectionIds.join(',');
+
   useEffect(() => {
-    // Cleanup previous observer
-    if (observer.current) {
-      observer.current.disconnect();
-    }
+    // Reset visible sections
+    visibleSections.current = {};
+    const ids = sectionIdsStr.split(',').filter(Boolean);
     
-    // Create new observer
-    observer.current = new IntersectionObserver(
+    if (ids.length === 0) return;
+
+    const observer = new IntersectionObserver(
       (entries) => {
-        // Find the entry with the highest intersection ratio
+        // Update the intersection ratio for each changed entry
+        entries.forEach((entry) => {
+          visibleSections.current[entry.target.id] = entry.intersectionRatio;
+        });
+
+        // Find the section with the highest intersection ratio
         let maxRatio = 0;
-        let maxEntry: IntersectionObserverEntry | undefined;
-        
-        for (const entry of entries) {
-          if (entry.intersectionRatio > maxRatio) {
-            maxRatio = entry.intersectionRatio;
-            maxEntry = entry;
+        let mostVisibleSection = "";
+
+        Object.entries(visibleSections.current).forEach(([id, ratio]) => {
+          if (ratio > maxRatio) {
+            maxRatio = ratio;
+            mostVisibleSection = id;
           }
-        }
-        
+        });
+
         // Only update if we have a sufficiently visible section
-        if (maxEntry && maxRatio > 0.2) {
-          setActiveSection(maxEntry.target.id);
+        if (mostVisibleSection && maxRatio > 0.1) {
+          setActiveSection(mostVisibleSection);
         }
       },
       {
         // Offset to trigger when section is in the "active" zone
+        // Adjust these values if your navbar height changes
         rootMargin: "-20% 0px -35% 0px",
-        threshold: [0, 0.2, 0.4, 0.6, 0.8, 1],
+        threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
       }
     );
     
     // Observe all sections
-    sectionIds.forEach((id) => {
+    ids.forEach((id) => {
       const element = document.getElementById(id);
       if (element) {
-        observer.current?.observe(element);
+        observer.observe(element);
       }
     });
     
     return () => {
-      observer.current?.disconnect();
+      observer.disconnect();
     };
-  }, [sectionIds]);
+  }, [sectionIdsStr]);
   
   return activeSection;
 }
