@@ -27,7 +27,7 @@ export function ProjectsSection() {
     <Section
       sectionId="projects"
       title="Works & Projects"
-      subtitle="A selection of projects I've built, from security tools to infrastructure automation."
+      subtitle="A selection of projects I've built, from tools to infrastructure automation."
     >
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 auto-rows-fr grid-flow-dense">
         {projects.map((project, index) => {
