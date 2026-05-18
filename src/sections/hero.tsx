@@ -113,7 +113,7 @@ export function HeroSection() {
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  View Resume
+                  Download Resume
                 </a>
               </Button>
             </div>
