@@ -212,11 +212,6 @@ export const profile: ProfileData = {
       description: "Intensive cloud computing program by Google, focusing on GCP learn professional soft skills through a collaborative Capstone Project.",
       year: 2024,
     },
-    {
-      title: "Juara GCP - Season 12",
-      description: "Completed hands-on cloud labs and earned multiple GCP Skill Badges through Google Cloud Skills Boost, focusing on infrastructure, security, and data solutions.",
-      year: 2026,
-    },
   ],
 
   skillCategories: [
