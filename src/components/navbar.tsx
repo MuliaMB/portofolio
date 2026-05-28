@@ -1,4 +1,4 @@
-/**
+ /**
  * Navbar Component
  * 
  * Sticky navigation with active section indicator.
