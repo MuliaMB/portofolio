@@ -169,7 +169,7 @@ export const profile: ProfileData = {
   stats: [
     { value: 6, label: "Projects", suffix: "+" },
     { value: 2, label: "Years in Tech", suffix: "+" },
-    { value: 2, label: "Tech Bootcamp", suffix: "+" },
+    { value: 1, label: "Tech Bootcamp", suffix: "+" },
   ],
 
   education: [
