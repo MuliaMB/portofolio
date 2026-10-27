@@ -169,7 +169,7 @@ export const profile: ProfileData = {
   stats: [
     { value: 6, label: "Projects", suffix: "+" },
     { value: 2, label: "Years in Tech", suffix: "+" },
-    { value: 2, label: "Tech Bootcamp", suffix: "+" },
+    { value: 3, label: "Achievements", suffix: "+" },
   ],
 
   education: [
@@ -213,10 +213,15 @@ export const profile: ProfileData = {
       year: 2024,
     },
     {
-      title: "Juara GCP - Season 12",
+      title: "AWS  Re/Start - Batch 15",
       description: "Completed hands-on cloud labs and earned multiple GCP Skill Badges through Google Cloud Skills Boost, focusing on infrastructure, security, and data solutions.",
       year: 2026,
     },
+    {
+      title: "Web Developer",
+      description: "Completed a comprehensive web development program, mastering front-end and back-end technologies, and building full-stack applications.",
+      year: 2026,
+    }
   ],
 
   skillCategories: [
@@ -306,6 +311,14 @@ export const profile: ProfileData = {
       featured: true,
       year: 2026,
       githubUrl: "https://github.com/MuliaMB/pln.git",
+    },
+    {
+      slug: "Asisten Pelayanan Nasabah",
+      title: "Internship Frontliner - Bank Sumsel Babel",
+      description: "Served as a Customer Service Assistant under the Magang Karya program at Bank Sumsel Babel, providing high-quality frontline service and maintaining customer satisfaction. Responsible for processing daily transactions, account openings, and customer data updates while strictly complying with KYC procedures and banking regulations. Successfully handled customer inquiries and complaints, while actively promoting digital banking adoption by guiding clients through BSB Mobile onboarding and cross-selling core financial products.",
+      tags: ["Bank Vision", "Management Documentation", "Hospitality", "Microsoft Excel", "Microsoft Word","Vision Sign","Marketing"],
+      featured: true,
+      year: 2026,
     },
   ],
 
