@@ -218,7 +218,7 @@ export const profile: ProfileData = {
       year: 2026,
     },
     {
-      title: "Web Developer",
+      title: "Web Developer - BNSP",
       description: "Completed a comprehensive web development program, mastering front-end and back-end technologies, and building full-stack applications.",
       year: 2026,
     }
