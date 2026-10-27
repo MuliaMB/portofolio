@@ -109,7 +109,7 @@ export function HeroSection() {
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <a 
-                  href="https://drive.google.com/file/d/1-OPgJzPyRqBj7q3oKW4UwgRNwGa0QJdh/view?usp=sharing" 
+                  href="https://drive.google.com/file/d/1rMWSE6gn-gtgId_jg2ejti0Nc5d6WjoA/view?usp=sharing" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
